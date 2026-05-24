@@ -57,7 +57,7 @@ public class JuegoConsola extends EstadoPartida {
         }
         if (partes[0].equals("D")) {
             accionDescubrir(f, c);
-        } else if (partes[0].equals("M")) {
+        } else if (partes[0].equals("B")) {
             tablero.getCelda(f, c).cambiarEstadoMarcada();
         } else {
             esperar("Usa D o M para jugar.");
@@ -91,7 +91,7 @@ public class JuegoConsola extends EstadoPartida {
             dibujante.limpiarTablero();
             dibujante.dibujar(tablero, false);
             System.out.println("Minas: " + (tablero.getTotalMinas() - verificarFinal.contarBanderas(tablero)) + "| " + "Tiempo :" + reloj.segundos() + "s");
-            System.out.println(" D fila Columna = Descubrir | M fila columna = Marcar Bandera  | S= Salir");
+            System.out.println(" D fila Columna = Descubrir | B fila columna = Marcar Bandera  | S= Salir");
             System.out.print(">>>");
             procesarComando(lector.leerLinea().toUpperCase());
         }

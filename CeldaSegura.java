@@ -1,3 +1,4 @@
+
 public class CeldaSegura extends Celda {
 
     private int numeroMinasAlrededor;
@@ -14,7 +15,7 @@ public class CeldaSegura extends Celda {
     @Override
     public String render(boolean mostrarTodo) {
         if (estaMarcada() && !estaRevelada()) {
-            return " F ";
+            return " B ";
         }
         if (!estaRevelada()) {
             return " . ";

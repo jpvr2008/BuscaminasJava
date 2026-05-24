@@ -1,3 +1,4 @@
+
 public class Celda {
 
     private boolean revelada;
@@ -29,7 +30,7 @@ public class Celda {
 
     public String render(boolean mostrarTodo) {
         if (!revelada && marcada) {
-            return " F ";
+            return " B ";
         }
         if (!revelada) {
             return " . ";

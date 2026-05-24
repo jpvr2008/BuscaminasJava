@@ -1,3 +1,4 @@
+
 public class DibujarTableroPantalla {
 
     public void dibujar(Tablero t, boolean mostrarTodo) {

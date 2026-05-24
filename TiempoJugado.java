@@ -1,3 +1,4 @@
+
 public class TiempoJugado {
 
     private long inicio;

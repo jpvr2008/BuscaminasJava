@@ -1,3 +1,4 @@
+
 public class CeldaMina extends Celda {
 
     @Override
@@ -8,7 +9,7 @@ public class CeldaMina extends Celda {
     @Override
     public String render(boolean mostrarTodo) {
         if (estaMarcada() && !estaRevelada()) {
-            return " F ";
+            return " B ";
         }
         if (!estaRevelada()) {
             if (mostrarTodo) {

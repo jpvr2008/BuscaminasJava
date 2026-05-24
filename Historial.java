@@ -1,3 +1,4 @@
+
 import java.util.ArrayList;
 
 public class Historial {
@@ -16,11 +17,7 @@ public class Historial {
         ordenarPorTiempo();
         for (int i = 0; i < partidas.size(); i++) {
             Partida p = partidas.get(i);
-            System.out.println((i + 1) + ". " + p.getDificultad()
-                    + " | " + p.getFilas() + "x" + p.getColumnas()
-                    + " | Minas: " + p.getMinas()
-                    + " | Tiempo: " + p.getTiempo() + "s"
-                    + " | " + (p.getGano() ? "GANO" : "PERDIO"));
+            System.out.println((i + 1) + ". " + p.getDificultad() + " | " + p.getFilas() + "x" + p.getColumnas() + " | Minas: " + p.getMinas() + " | Tiempo: " + p.getTiempo() + "s" + " | " + (p.getGano() ? "GANO" : "PERDIO"));
         }
     }
 
