@@ -23,10 +23,32 @@ Personalizado: el jugador define las dimensiones y minas
 El proyecto tiene 18 clases organizadas por responsabilidad:
 
 Celda, CeldaMina, CeldaSegura     → las casillas del tablero
+
+
 Tablero                            → la cuadrícula del juego
+
+
 ColocadorMinas, Calculador         → lógica de minas y números
+
+
 Cascada, VerificadorFinalJuego     → revelación y detección de victoria
+
+
 GeneradorNumeros, TiempoJugado     → utilidades
+
+
 LectorDatos, DibujarTableroPantalla, MenuConsola  → interfaz de consola
+
+
 Partida, Historial                 → registro de partidas
+
+
 EstadoPartida, JuegoConsola, Main  → orquestación del juego
+
+
+El orden de construcción del código fue el siguiente:
+
+Celda->CeldaSegura->CeldaMina->Tablero-> GeneradorNumeros -> ColocadorMinas-> Calculador
+-> Cascada -> VerificarFinalJuego -> TiempoJugado -> LectorDatos -> DibujarTableroPantalla
+-> MenuConsola->EstadoPartida-> JuegoConsola-> Partida-> Historial -> main
+
