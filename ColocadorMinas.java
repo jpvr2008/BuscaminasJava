@@ -1,3 +1,4 @@
+
 public class ColocadorMinas {
 
     private final GeneradorNumeros generador = new GeneradorNumeros();

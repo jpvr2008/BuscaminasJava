@@ -1,3 +1,4 @@
+
 public class Calculador {
 
     private int contarMinasVecinas(Tablero t, int f, int c) {

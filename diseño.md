@@ -23,5 +23,5 @@ Pero para que todo funcione se necesita un director, el cual es la clase EstadoP
 Finalmente todo esto arranca con la clase Main, que es simplemente el botón de encendido del juego, su función es crear al juego e iniciarlo.
 
 
-En conclusión, este buscaminas es un excelente ejemplo de como la POO permite construir sistemas robustos. Al separar el almacenamiento de datos, la lógica matemática y la interfaz visual, logramos obtener un código ordenado fácil de leer y perfectamente preparado para seguir creciendo y mejorando en un futuro.
+Al separar el almacenamiento de datos, la lógica  y la interfaz visual, logramos obtener un código ordenado fácil de leer y perfectamente preparado para seguir creciendo y mejorando en un futuro.
 
