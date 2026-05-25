@@ -25,3 +25,7 @@ Finalmente todo esto arranca con la clase Main, que es simplemente el botón de 
 
 Al separar el almacenamiento de datos, la lógica  y la interfaz visual, logramos obtener un código ordenado fácil de leer y perfectamente preparado para seguir creciendo y mejorando en un futuro.
 
+
+
+Diagrama de clases:
+![Diagrama UML](BuscaminasUML.pdf)
