@@ -1,8 +1,23 @@
 Explicación textual Buscaminas
+
+
 Equipo de trabajo:
+
+
 Juan Pablo Vega
+
+
 Alejandro Beracierto
+
+
 Simón Foguel
+
+
+
+
+
+
+
 En este documento explicamos paso a paso como fue desarrollado nuestro buscaminas en JAVA. El proyecto se hizo con 18 clases, las cuales son necesarias para que el juego funcione correctamente.
 Para crear el programa usamos la POO, que quiere decir esto, dividimos el problema que era uno muy grande en ciertos subproblemas que son más sencillos de trabajar, las clases pueden cumplir tres funciones las cuales son primera guardar información, segunda ser el “cerebro” del programa (los cálculos) o tercera ser la parte visual del juego. Ahora vamos a explicar cada clase que función cumple.
 
