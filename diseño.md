@@ -38,6 +38,23 @@ Pero para que todo funcione se necesita un director, el cual es la clase EstadoP
 Finalmente todo esto arranca con la clase Main, que es simplemente el botón de encendido del juego, su función es crear al juego e iniciarlo.
 
 
+
+La conexión entre las clases se dan por cuatro tipos de relaciones: Herencia, composición,
+agregación y dependencia/uso. La herencia en las clases CeldaSegura y CeldaMina, que son tiposde Celda; y en JuegoConsola, que hereda de EstadoPartida, ya que es lo más relevante
+de cada partida en JuegoConsola. La relación de composición se usó para todas las clases
+cuyos métodos creaban nuevos objetos de otras clases, es decir, que instanciaban estos
+métodos en sus atributos. Por ejemplo, tablero crea las celdas que lo componen desde su constructor y juegoConsola crea todas las clases que interfieren como atributos. La agregación  se usó en Historial y Partida, ya que las partidas pueden existir sin el historial; solo se pasan a este para el almacenamiento. Y en cuanto a dependencia/uso, cuando una clase  necesitaba a otra, pero sin poseerla ni crearla. Por ejemplo Cascada, Calculador, ColocadorMinas y VerificadorFinal usan a tablero como parámetro en sus métodos, lo usan y luego lo olvidan.
+
+
+
+Para el tablero se eligió un tablero bidimensional el cual es estático, se usó Celda[][] y no ArrayList porque el tablero debe tener unas dimensiones fijas desde el momento en que se crea el tablero nunca va a aumentar ni a disminuir su tamaño, por eso es más simple y eficiente usar un arreglo estático, por que con este es más sencillo acceder a una celda basándonos en coordenadas, que con ArrayList, que además de que el tablero no tiene la necesidad de cambiar su tamaño es más difícil invocar una celda. El ArrayList si nos fue útil en la clase Historial por que el número de partidas que se pueden llegar a jugar son indeterminados desde el comienzo
+
+
+
+El juego comienza en Main. Se crea el objeto JuegoConsola de tipo EstadoPartida, gracias a el polimorfismo. Se llama al método IniciarPartida en JuegoConsola y, posteriormente, se muestra el menú principal (MenuConsola). Al darle a la opción 1, el usuario elige la dificultad y se crea el tablero, compuesto de CeldaSegura. Inicia Bucle y empieza el juego, el jugador hace su primera jugada y se ponen las minas, posteriormente se le hace una llamada constante a Cascada, que activa el método revelar y descubre todas las celdas alrededor de la elegida si cumplen con la condición de ser CeldaSegura; con la ayuda de  procesarComando y AccionDescubrir se dan uso a los comandos que revelan cada celda en el tablero y sus comportamientos. El juego termina con la partida guardada gracias a MostrarFin, que hace uso de verificarFinal, se almacena en Historial y se le indica al usuario si perdió o no; todo dependiendo de las decisiones tomadas y ejecutadas durante la partida.
+
+
+
 Al separar el almacenamiento de datos, la lógica  y la interfaz visual, logramos obtener un código ordenado fácil de leer y perfectamente preparado para seguir creciendo y mejorando en un futuro.
 
 
